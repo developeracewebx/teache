@@ -165,7 +165,7 @@ const Signup = () => {
                       type="button"
                       name="next"
                       className="next action-button"
-                      value="Create Account1"
+                      value="Create Account"
                       onClick={handleNext}
                     />
                   </div>
