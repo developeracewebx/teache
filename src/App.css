@@ -1,0 +1,581 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: "Montserrat", sans-serif;
+}
+ol, ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*==============header-css==============*/
+
+header {
+    padding: 19px 0px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+    gap: 70px;
+}
+.menu ul li a {
+    color: #474747;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/*==============header-css==============*/
+
+
+/*==============instrutor-signup-css==============*/
+
+.instrutor-signup {
+  padding: 80px 0 60px;
+}
+.account {
+    display: flex;
+    align-items: center;
+}
+.account .phone-image {
+    width: 30%;
+}
+.account .account-form {
+    width: 70%;
+}
+.instrutor-signup h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 0 0 40px;
+  color: #191D3A;
+}
+.form-fields {
+    display: flex;
+    margin: 0 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form-fields .half-field {
+    width: calc(50% - 10px);
+    position: relative;
+}
+.form-fields input {
+  width: 100%;
+  border: 2px solid #EDF0FF;
+  border-radius: 8px;
+  padding: 16px 40px 16px 42px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #191D3A;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.form-fields input::placeholder{
+  color: #191D3A;
+}
+
+.steps-container .form-fields input::placeholder{
+  color: #A7A6CE;
+}
+
+.form-fields input:focus {
+  outline: none;
+}
+.form-fields .field-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.form-fields i {
+    font-size: 20px;
+    color: #CCCAFB;
+}
+.form-fields .full-field {
+    width: 100%;
+    position: relative;
+}
+.form-fields .field {
+  position: relative;
+}
+
+
+#msform {
+    position: relative;
+}
+
+.instrutor-signup fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.instrutor-signup .form-card {
+    width: 70%;
+    padding: 0 97px 0 0;
+}
+.phone-image {
+    width: 30%;
+}
+
+.instrutor-signup fieldset:not(:first-of-type) {
+    display: none
+}
+
+.hide{
+	display: none;
+}
+
+.instrutor-signup .action-button {
+  background: #FF827A;
+  color: white;
+  border: 0 none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 17px 5px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.instrutor-signup .action-button:hover,
+.instrutor-signup .action-button:focus {
+    background-color: #FF827A
+}
+.form-button {
+  margin: 30px 0 0;
+}
+.instrutor-signup .action-button-previous {
+  width: 56px;
+  background: #fff;
+  font-weight: bold;
+  color: transparent;
+  cursor: pointer;
+  padding: 10px 5px;
+  height: 56px;
+  border: 2px solid #EDF0FF;
+  border-radius: 8px;
+}
+
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  display: none;
+}
+
+#progressbar .active {
+    color: #673AB7
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #673AB7
+}
+
+.progress {
+  height: 11px;
+  max-width: 1060px;
+  margin: 0 auto 60px;
+  background: #EDF0FF;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background-color: #554DF1;
+  height: 11px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+.form-fields .show-password {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+
+.steps-container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.steps-container .form-card {
+  width: 100%;
+  padding: 0;
+}
+.steps-container .form-card h3 {
+  text-align: center;
+  margin: 0px 0 40px;
+}
+.steps-container .form-card .back-button {
+  position: absolute;
+  top: -10px;
+}
+.back-button i {
+  position: absolute;
+  left: 21px;
+  top: 22px;
+  font-size: 18px;
+  pointer-events: none;
+}
+.profile-fields {
+  max-width: 440px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile-fields p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #191D3A;
+  margin: 0 0 25px;
+}
+.profile-fields .profile-image {
+  width: 110px;
+  min-width: 110px;
+  text-align: center;
+}
+.profile-fields .profile-image img {
+  min-height: 110px;
+  min-width: 110px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.profile-fields .profile-image button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+.profile-fields .upload-image {
+  width: calc(100% - 160px);
+  margin: 0 0 0 50px;
+}
+
+.upload-image .file-field {
+  position: relative;
+}
+.upload-image .file-field input {
+  position: absolute;
+}
+.upload-image .file-field span {
+  display: inline-block;
+  background: #EDF0FF80;
+  border: 2px dashed #554DF180;
+  padding: 17px;
+  border-radius: 5px;
+  width: 265px;
+  text-align: center;
+  color: #191D3A;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+.upload-image .file-field input {
+  position: absolute;
+  width: 265px;
+  height: 56px;
+  opacity: 0;
+}
+.upload-image .file-field i {
+  color: #A7A6CE;
+  font-size: 24px;
+  margin: 0 10px 0 0;
+}
+.upload-image .file-type {
+  margin: 20px 0 0;
+  color: #A7A6CE;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.form-fields label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #191D3A;
+  margin: 0 0 12px;
+  display: inline-block;
+}
+.form-fields .field.no-icon input {
+  padding-left: 15px;
+}
+.steps-container .form-fields {
+  margin-bottom: 40px;
+}
+.form-fields textarea {
+  width: 100%;
+  border: 2px solid #EDF0FF;
+  border-radius: 8px;
+  padding: 16px 40px 16px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #191D3A;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  height: 105px;
+}
+.form-fields textarea::placeholder {
+  color: #A7A6CE;
+}
+.radio-field {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+.radio-field .radio-collunm {
+  width: calc(33.33333% - 12px);
+  text-align: center;
+  position: relative;
+}
+.radio-field .radio-collunm span {
+  color: #554DF1;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border: 2px solid #EDF0FF;
+  display: inline-block;
+  width: 100%;
+  height: 56px;
+  padding: 13px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.radio-field .radio-collunm input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.radio-field .radio-collunm input:checked ~ span {
+  background: #EDF0FF;
+  border-color: #554DF1;
+}
+.divied-container {
+  display: flex;
+  gap: 150px;
+}
+
+.divied-container .divied-image {
+  width: 36%;
+  box-sizing: border-box;
+}
+.divied-container .divied-left {
+  width: 64%;
+}
+.form-fields .full-field select {
+  width: 100%;
+  border: 2px solid #EDF0FF;
+  border-radius: 8px;
+  padding: 16px 15px 16px 15px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background: #EDF0FF;
+  color: #554DF1;
+}
+.divied-container .form-fields input {
+  padding: 16px 15px 16px 42px;
+}
+.field.earning {
+  height: 56px;
+  padding: 13px 30px;
+  box-sizing: border-box;
+}
+.field.earning .field-icon {
+  left: 0;
+}
+.earning-value i {
+  background: #EDF0FF;
+  color: #554DF1;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 100%;
+  line-height: 30px;
+  margin-left: 24px;
+}
+.earning-value {
+  color: #554DF1;
+  font-weight: 500;
+  font-size: 18px;
+}
+.divied-container .half-left {
+  width: 50%;
+  margin: 75px 0 0;
+}
+.divied-container .half-right {
+  width: 50%;
+  margin: 75px 0 0;
+}
+.form-card .divied-container h3 {
+  text-align: left;
+}
+
+.policy-fields .input-field {
+  width: 180px;
+}
+.policy-fields .select-field {
+  width: calc(100% - 200px);
+}
+.policy-fields {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 15px;
+}
+.policy-fields .input-field {
+  width: 180px;
+  position: relative;
+}
+
+.step-count {
+  width: 100%;
+  max-width: 1060px;
+  left: 50%;
+  position: absolute;
+  top: -100px;
+  transform: translate(-50%, 0);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.policy-fields .input-field {
+  width: 180px;
+}
+.policy-fields .select-field {
+  width: calc(100% - 200px);
+}
+.policy-fields {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 15px;
+}
+.policy-fields .input-field {
+  width: 180px;
+  position: relative;
+}
+/*==============instrutor-signup-css==============*/
+
+
+
+
+
+@media (min-width:1440px){
+.container {
+    max-width: 1380px;
+}
+}
+@media (min-width:1600px){
+.container {
+    max-width: 1540px;
+}
+}
+
+
+
+
