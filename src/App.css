@@ -52,6 +52,7 @@ header {
 
 .instrutor-signup {
   padding: 80px 0 60px;
+  overflow-x: hidden;
 }
 .account {
     display: flex;
@@ -264,12 +265,13 @@ header {
   margin: 0 auto 60px;
   background: #EDF0FF;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .progress-bar {
   background-color: #554DF1;
   height: 11px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 0;
 }
 
 .fit-image {
@@ -277,9 +279,12 @@ header {
     object-fit: cover
 }
 .form-fields .show-password {
-    position: absolute;
-    right: 15px;
-    top: 19px;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .steps-container {
@@ -343,6 +348,10 @@ header {
   background: transparent;
   border: none;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.profile-fields .profile-image button span{
+  color:#554DF1;
 }
 .profile-fields .upload-image {
   width: calc(100% - 160px);
@@ -359,7 +368,7 @@ header {
   display: inline-block;
   background: #EDF0FF80;
   border: 2px dashed #554DF180;
-  padding: 17px;
+  padding: 14px 17px;
   border-radius: 5px;
   width: 265px;
   text-align: center;
@@ -417,6 +426,9 @@ header {
 .form-fields textarea::placeholder {
   color: #A7A6CE;
 }
+.form-fields textarea:focus{
+  outline: none;
+}
 .radio-field {
   display: flex;
   gap: 17px;
@@ -455,6 +467,7 @@ header {
 .divied-container {
   display: flex;
   gap: 150px;
+  align-items: center;
 }
 
 .divied-container .divied-image {
@@ -476,6 +489,9 @@ header {
   font-family: "Montserrat", sans-serif;
   background: #EDF0FF;
   color: #554DF1;
+}
+.form-fields .full-field select:focus{
+  outline:none;
 }
 .divied-container .form-fields input {
   padding: 16px 15px 16px 42px;
@@ -559,15 +575,37 @@ header {
   width: 180px;
   position: relative;
 }
+.phone-image img {
+  width: 580px;
+}
+.divied-container .half-left .form-fields {
+  margin: 0;
+}
 /*==============instrutor-signup-css==============*/
 
 
+@media (min-width:768px){
+  .container {
+    max-width: 740px;
+  }
+ }
 
+@media (min-width:992px){
+  .container {
+    max-width: 960px;
+  }
+ }
+
+@media (min-width:1300px){
+.container {
+    max-width: 1140px;
+}
+}
 
 
 @media (min-width:1440px){
 .container {
-    max-width: 1380px;
+    max-width: 1300px;
 }
 }
 @media (min-width:1600px){
@@ -578,4 +616,382 @@ header {
 
 
 
+@media (max-width:1599px){
+.phone-image img {
+  width: 540px;
+}
+}
 
+@media (max-width:1439px){
+.phone-image img {
+  width: 460px;
+}
+.instrutor-signup h3 {
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 0 20px;
+}
+.instrutor-signup {
+  padding: 60px 0 40px;
+}
+.form-fields input {
+  padding: 14px 35px 14px 40px;
+  font-size: 15px;
+}
+.form-fields i {
+  font-size: 18px;
+}
+.instrutor-signup .action-button {
+  padding: 15px 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.navbar .logo img {
+  width: 200px;
+}
+.menu ul li a {
+  font-size: 16px;
+  line-height: 20px;
+}
+header {
+  padding: 16px 0px;
+}
+.divied-container .divied-image img {
+  width: 460px;
+}
+.steps-container .form-fields {
+  margin-bottom: 30px;
+}
+.form-fields label {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+.divied-container .form-fields input {
+  padding: 14px 35px 14px 40px;
+}
+.form-fields .full-field select {
+  padding: 14px 13px 14px 13px;
+}
+.policy-fields .select-field select {
+  padding: 13px 13px 14px 13px;
+}
+}
+
+@media (max-width:1299px){
+.instrutor-signup {
+  padding: 40px 0 20px;
+}
+.phone-image img {
+  width: 400px;
+}
+.instrutor-signup .form-card {
+  padding: 0 70px 0 0;
+}
+.form-fields {
+  margin: 0 0 15px;
+  gap: 15px;
+}
+.form-fields input {
+  padding: 13px 30px 13px 35px;
+}
+.form-button {
+  margin: 20px 0 0;
+}
+.form-fields .field-icon {
+  left: 12px;
+}
+.form-fields i {
+  font-size: 17px;
+}
+.divied-container {
+  gap: 100px;
+}
+.steps-container .form-card{
+  padding: 0;
+}
+.form-card .divied-container h3 {
+  margin: 0px 0 20px;
+}
+}
+
+@media (max-width:991px){
+.phone-image img {
+  width: 340px;
+}
+.instrutor-signup .form-card {
+  padding: 0 40px 0 0;
+}
+.form-fields input {
+  padding: 12px 28px 12px 32px;
+  font-size: 14px;
+}
+.form-fields .field-icon {
+  left: 10px;
+}
+.form-fields i {
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+}
+.form-fields .show-password {
+  right: 12px;
+  top: 17px;
+}
+.menu ul {
+  gap: 40px;
+}
+.menu ul li a {
+  font-size: 15px;
+}
+.navbar .logo img {
+  width: 180px;
+}
+.form-button {
+  margin: 16px 0 0;
+}
+.form-fields textarea {
+  font-size: 15px;
+  height: 125px;
+}
+.steps-container .form-card {
+  padding: 0;
+}
+.divied-container {
+  gap: 50px;
+}
+.divied-container .divied-image img {
+  width: 490px;
+}
+.divied-container .form-fields input {
+  padding: 12px 28px 12px 32px;
+}
+.form-fields .full-field select {
+  padding: 12px 13px 12px 13px;
+}
+.steps-container .form-fields {
+  margin-bottom: 25px;
+}
+.form-fields label {
+  font-size: 15px;
+  line-height: 21px;
+}
+.policy-fields {
+  gap: 12px;
+  margin: 0 0 13px;
+}
+.policy-fields .input-field {
+  width: 150px;
+}
+.policy-fields .select-field {
+  width: calc(100% - 162px);
+}
+}
+@media (max-width:767px){
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.instrutor-signup fieldset {
+  flex-wrap: wrap;
+}
+.instrutor-signup .form-card {
+  padding: 0;
+  width: 100%;
+}
+
+.phone-image img {
+  width: 300px;
+  object-fit: contain;
+}
+.phone-image {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 0;
+}
+.divied-container {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.divied-container .divied-left {
+  width: 100%;
+}
+.divied-container .divied-image {
+  width: 100%;
+  text-align: center;
+}
+.divied-container .divied-image img {
+  width: 400px;
+}
+.divied-container .half-left {
+  width: 100%;
+}
+.divied-container .half-right {
+  width: 100%;
+  margin: 20px 0 0;
+}
+.policy-fields .input-field {
+  width: 240px;
+}
+.policy-fields .select-field {
+  width: calc(100% - 254px);
+}
+}
+
+@media (max-width:575px){
+.menu ul {
+  gap: 15px;
+}
+.navbar .logo img {
+  width: 120px;
+}
+.menu ul li a {
+  font-size: 13px;
+}
+.instrutor-signup {
+  padding: 20px 0 20px;
+}
+.instrutor-signup h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 10px;
+}
+.form-fields .half-field {
+  width: 100%;
+}
+.profile-fields {
+  max-width: 320px;
+  margin: 0 auto 30px;
+}
+.upload-image .file-field span {
+  padding: 12px;
+  width: 215px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.upload-image .file-field i {
+  font-size: 20px;
+  top: 2px;
+}
+.profile-fields .upload-image {
+  width: calc(100% - 100px);
+  margin: 0 0 0 20px;
+}
+.profile-fields .profile-image {
+  width: 80px;
+  min-width: 80px;
+}
+.profile-fields .profile-image img {
+  min-height: 80px;
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+}
+.profile-fields .profile-image button {
+  font-size: 13px;
+  line-height: 20px;
+}
+.profile-fields p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px 0 20px;
+}
+.form-fields label {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 8px;
+}
+.steps-container .form-fields {
+  margin-bottom: 24px;
+}
+.steps-container .form-card h3 {
+  margin: 0px 0 25px;
+}
+.instrutor-signup .action-button-previous {
+  width: 40px;
+  padding: 4px 4px;
+  height: 40px;
+}
+.back-button i {
+  left: 14px;
+  top: 14px;
+  font-size: 15px;
+}
+.progress {
+  margin: 30px auto 40px;
+  height: 8px;
+}
+.progress-bar {
+  height: 8px;
+}
+.step-count {
+  top: -80px;
+  font-size: 14px;
+}
+.form-fields textarea {
+  font-size: 14px;
+  height: 125px;
+  padding: 12px 20px 12px 15px;
+}
+.radio-field {
+  gap: 10px;
+}
+.radio-field .radio-collunm span {
+  font-size: 13px;
+  line-height: 22px;
+  height: 50px;
+  padding: 12px 0;
+}
+.divied-container .divied-image img {
+  width: 300px;
+}
+.earning-value {
+  font-size: 16px;
+}
+.field.earning {
+  height: 52px;
+  padding: 10px 30px;
+}
+.steps-container .form-fields {
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.divied-container .half-left {
+  margin: 45px 0 0;
+}
+.steps-container .form-card h3 {
+  margin: 0px 0 15px;
+}
+.divied-container .half-right {
+  margin: 10px 0 0;
+}
+.policy-fields .input-field {
+  width: 140px;
+}
+.divied-container .form-fields input {
+  padding: 12px 17px 12px 28px;
+}
+.policy-fields .select-field {
+  width: calc(100% - 154px);
+}
+.divied-container .half-right .form-fields {
+  gap: 10px;
+  margin: 0;
+}
+.policy-fields .select-field select {
+  padding: 11px 11px 11px 11px;
+}
+.radio-field .radio-collunm {
+  width: calc(33.33333% - 7px);
+}
+.upload-image .file-field input {
+  width: 215px;
+  height: 50px;
+}
+.upload-image .file-type {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+}
